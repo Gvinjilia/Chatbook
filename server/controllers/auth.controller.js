@@ -56,7 +56,7 @@ const signup = catchAsync(async (req, res) => { // ვქმნით ფუნ�
 
     await newUser.save({ validateBeforeSave: false });
 
-    const url = `http://localhost:3000/api/auth/verify/${code}`
+    const url = `${req.protocol}://${req.get("host")}/api/auth/verify/${code}`
 
     sendEmail(email, 'Hello from Chatbook', `
             <div style="display: flex; margin-left: 50px; flex-direction: column; gap: 5px">
