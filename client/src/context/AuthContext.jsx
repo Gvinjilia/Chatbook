@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
-const API_URL = import.meta.env.VITE_SERVER_URL + '/api';
+const API_URL = 'https://chatbook-xh5v.onrender.com/api';
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -20,11 +20,11 @@ export const AuthProvider = ({ children }) => {
                 credentials: 'include'
             });
 
-            const result = await res?.json();
-
             if(!res.ok){
-                throw new Error(result.message);
+                throw new Error('Invalid Token');
             }
+
+            const result = await res?.json();
 
             setUser(result);
 

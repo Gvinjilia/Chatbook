@@ -6,7 +6,7 @@ export const PostsContext = createContext();
 
 export const usePosts = () => useContext(PostsContext);
 
-const API_URL = import.meta.env.VITE_SERVER_URL + '/api';
+const API_URL = 'https://chatbook-xh5v.onrender.com/api';
 
 export const PostProvider = ({ children }) => {
     const [posts, setPosts] = useState([]);
