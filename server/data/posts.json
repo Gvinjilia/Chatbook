@@ -1,0 +1,92 @@
+[
+  {
+    "title": "How to Build a Personal Website in 1 Hour",
+    "content": "Learn how to set up a sleek personal site using HTML, CSS, and GitHub Pages.",
+    "likeCount": 112,
+    "tags": ["WebDev", "HTML", "CSS", "GitHub"],
+    "about": "A beginner-friendly guide to launching your online presence fast.",
+    "difficulty": "easy",
+    "__v": 0
+  },
+  {
+    "title": "Understanding Recursion with Real-Life Analogies",
+    "content": "Recursion can be confusing—until you think of it like Russian nesting dolls.",
+    "likeCount": 198,
+    "tags": ["Programming", "Algorithms", "Recursion"],
+    "about": "This post breaks down recursion using relatable metaphors and visuals.",
+    "difficulty": "medium",
+    "__v": 0
+  },
+  {
+    "title": "Mastering Neural Networks from Scratch",
+    "content": "Dive deep into the math and architecture behind neural networks.",
+    "likeCount": 305,
+    "tags": ["AI", "MachineLearning", "NeuralNetworks", "DeepLearning"],
+    "about": "For those ready to go beyond the basics and build models from the ground up.",
+    "difficulty": "hard",
+    "__v": 0
+  },
+  {
+    "title": "Productivity Hacks for Night Owls",
+    "content": "If you're most alive after sunset, here's how to structure your day around it.",
+    "likeCount": 87,
+    "tags": ["Lifestyle", "Productivity", "SleepCycle"],
+    "about": "A guide for late-night thinkers who want to stay efficient without burning out.",
+    "difficulty": "easy",
+    "__v": 0
+  },
+  {
+    "title": "The Psychology Behind Decision Fatigue",
+    "content": "Why choosing what to wear can feel harder than solving a math problem.",
+    "likeCount": 143,
+    "tags": ["Psychology", "MentalHealth", "Habits"],
+    "about": "Explore how too many choices wear down your brain—and how to fight back.",
+    "difficulty": "medium",
+    "__v": 0
+  },
+  {
+    "title": "Creating a Budget App with React Native",
+    "content": "Build a cross-platform app to track your spending habits in real time.",
+    "likeCount": 276,
+    "tags": ["ReactNative", "MobileDev", "FinanceApp"],
+    "about": "A hands-on tutorial for developers who want to create useful mobile tools.",
+    "difficulty": "hard",
+    "__v": 0
+  },
+  {
+    "title": "How to Write a Killer Elevator Pitch",
+    "content": "Craft a 30-second intro that makes people say 'Tell me more!'",
+    "likeCount": 91,
+    "tags": ["Career", "Communication", "Networking"],
+    "about": "Perfect for job seekers, entrepreneurs, and anyone who wants to stand out.",
+    "difficulty": "easy",
+    "__v": 0
+  },
+  {
+    "title": "Exploring the Basics of Quantum Computing",
+    "content": "What is a qubit? And why does it matter?",
+    "likeCount": 184,
+    "tags": ["Quantum", "Computing", "Physics", "TechTrends"],
+    "about": "A simplified intro to one of the most mind-bending fields in tech.",
+    "difficulty": "medium",
+    "__v": 0
+  },
+  {
+    "title": "Designing for Accessibility: Why It Matters",
+    "content": "Make your apps and websites usable for everyone, including people with disabilities.",
+    "likeCount": 129,
+    "tags": ["UX", "Accessibility", "InclusiveDesign"],
+    "about": "Learn how small design choices can make a big impact on usability.",
+    "difficulty": "medium",
+    "__v": 0
+  },
+  {
+    "title": "The Art of Saying No Without Feeling Guilty",
+    "content": "Boundaries are powerful. Here's how to set them with grace.",
+    "likeCount": 158,
+    "tags": ["SelfCare", "Boundaries", "MentalHealth"],
+    "about": "A guide to protecting your time and energy without burning bridges.",
+    "difficulty": "easy",
+    "__v": 0
+  }
+]
