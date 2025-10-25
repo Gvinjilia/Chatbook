@@ -18,15 +18,16 @@ export const AuthProvider = ({ children }) => {
     const autoLogin = async () => {
         try{
             const res = await fetch(`${API_URL}/auth/auto-login`, {
-                method: 'GET',
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
                 credentials: 'include'
             });
 
             if(!res.ok){
-                throw new Error("Invalid token")
+                throw new Error('Invalid Token');
             }
 
-            const result = await res.json();
+            const result = await res?.json();
 
             setUser(result);
 
