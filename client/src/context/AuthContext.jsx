@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
 
     const navigate = useNavigate();
 
-        const autoLogin = async () => {
+    const autoLogin = async () => {
         try{
             const res = await fetch(`${API_URL}/auth/auto-login`, {
                 method: 'GET',
