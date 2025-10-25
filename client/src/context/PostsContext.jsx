@@ -6,7 +6,7 @@ export const PostsContext = createContext();
 
 export const usePosts = () => useContext(PostsContext);
 
-const API_URL = 'https://chatbook-xh5v.onrender.com/api';
+const API_URL = import.meta.env.VITE_SERVER_URL + '/api';
 
 export const PostProvider = ({ children }) => {
     const [posts, setPosts] = useState([]);
@@ -33,9 +33,8 @@ export const PostProvider = ({ children }) => {
         try {
             const res = await fetch(`${API_URL}/posts`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                body: formData,
                 credentials: 'include',
-                body: JSON.stringify(formData)
             });
 
             const result = await res.json();
@@ -48,7 +47,7 @@ export const PostProvider = ({ children }) => {
         } catch (err){
             console.log(err.message)
         }
-    }
+    };
 
     const deletePost = async (postId) => {
         try{

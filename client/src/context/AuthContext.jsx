@@ -6,7 +6,9 @@ export const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
-const API_URL = 'https://chatbook-xh5v.onrender.com/api';
+const API_URL = import.meta.env.VITE_SERVER_URL + '/api';
+
+// 'https://chatbook-xh5v.onrender.com/api'
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -17,6 +19,7 @@ export const AuthProvider = ({ children }) => {
         try{
             const res = await fetch(`${API_URL}/auth/auto-login`, {
                 method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
                 credentials: 'include'
             });
 

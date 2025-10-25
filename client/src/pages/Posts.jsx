@@ -54,10 +54,11 @@ const Posts = ({ userId }) => {
                                 </form>
                             ) : (
                                 <>
-                                    <div className="mb-4 border w-75 p-2 h-35 flex flex-col justify-center ml-3 mt-5">
+                                    <div className="mb-4 border w-75 p-2 h-auto flex flex-col justify-center ml-3 mt-5">
                                         <p><span className="font-medium">Created By:</span> {post.fullname}</p>
                                         <p><span className="font-medium">Title:</span> {post.title}</p>
                                         <p><span className="font-medium">Content:</span> {post.content}</p>
+                                        <img src={`${import.meta.env.VITE_SERVER_URL}/images/${post.postImage}`} className="mt-2" />
                                     </div>
 
                                     {

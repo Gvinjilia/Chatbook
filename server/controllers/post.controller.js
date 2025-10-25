@@ -71,15 +71,15 @@ const getUserPosts = catchAsync(async (req, res, next) => {
 });
 
 const createPost = catchAsync(async (req, res) => {
-    const { title, content, likesCount, tags } = req.body;
+    const { title, content, tags } = req.body;
 
     const newPost = await Post.create({
         userId: req.user._id,
         fullname: req.user.fullname,
         title,
         content,
-        likesCount: likesCount,
-        tags: tags
+        tags,
+        postImage: req.file ? req.file.filename : undefined
     });
 
     res.status(201).json(newPost);

@@ -19,7 +19,8 @@ app.use(cors({
     credentials: true
 }));
 
-app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(cookieParser());
 app.use(express.json());
 
@@ -50,3 +51,8 @@ mongoose.connect(process.env.DATABASE_URL)
 
         process.exit(1);
     });
+
+
+// multer - არის express - ის middleware ფუნქცია, ამ შუამავალი ფუნქციის გამოყენებით ჩვენ შეგვიძლია ავტვირთოთ ჩვენი local ფოტოები, multer - ი ამ ფოტოს შეინახავს 
+// მეხსიერებაში (RAM, ან disk ზე), იმ შემთხვევაში თუ ფოტო შეინახა დროებით მეხსიერებაში მაშინ ის დაიკარგება მაშინ როდესაც server - ი და - restart - დება, თუ ჩვენ 
+// მომხმარებლის მიერ ატვირთულ ფოტოს შევინახავთ disk - ზე მაშინ ის არ დაიკარგება ანუ ის იქნება შენახული მაშინაც კი როდესაც მომხმარებელი profile - იდა გამოვა

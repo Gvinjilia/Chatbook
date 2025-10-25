@@ -22,7 +22,7 @@ const Signup = () => {
             <input name="fullname" type="name" placeholder="Enter fullname" required className="border p-1 w-50 pl-2" />
             <input name="email" type="email" placeholder="Enter Your email" required className="border p-1 w-50 pl-2" />
             <input name="password" type="password" placeholder="Enter your password" required className="border p-1 w-50 pl-2" />
-            <button style={{ backgroundColor: 'var(--button-bg, #8B3DFF)' }} className="w-20 text-white rounded-xs w-50 p-1">SignUp</button>
+            <button style={{ backgroundColor: 'var(--button-bg, #8B3DFF)' }} className="text-white rounded-xs w-50 p-1">SignUp</button>
         </form>
     )
 }
