@@ -15,19 +15,18 @@ export const AuthProvider = ({ children }) => {
 
     const navigate = useNavigate();
 
-    const autoLogin = async () => {
+        const autoLogin = async () => {
         try{
             const res = await fetch(`${API_URL}/auth/auto-login`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                method: 'GET',
                 credentials: 'include'
             });
 
             if(!res.ok){
-                throw new Error('Invalid Token');
+                throw new Error("Invalid token")
             }
 
-            const result = await res?.json();
+            const result = await res.json();
 
             setUser(result);
 
